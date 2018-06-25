@@ -1,0 +1,14 @@
+.button{
+  min-height: 60px;
+  border-radius: 30px;
+  border: 1px solid $white;
+  background: none;
+  outline: none;
+  padding: 26px 46px 24px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover{
+    background: $red;
+  }
+}
