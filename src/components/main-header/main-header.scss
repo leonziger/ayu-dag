@@ -6,15 +6,16 @@ h1{
   display: flex;
   justify-content: space-between;
 
-  //max-width: 1200px;
-  //padding-left: 15px;
-  //padding-right: 15px;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   color: $white;
 
   &__logo{
     display: flex;
     align-items: center;
+    margin-left: -30px;
 
     &-wrapper{
       padding: 22px 23px;
@@ -26,6 +27,7 @@ h1{
       font-weight: 400;
       font-size: 14px;
       max-width: 254px;
+      line-height: 16px;
     }
 
   }
@@ -34,6 +36,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 33px;
 
     &-phone, &-button{
       letter-spacing: 1.4px;
@@ -51,7 +54,7 @@ h1{
 
     &-button{
       color: $white;
-      margin-left: 26px;
+      margin-left: 27px;
     }
   }
 }

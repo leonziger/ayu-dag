@@ -41,7 +41,6 @@ body {
 
 html {
   font: 100 14px/1.5 'MuseoSansCyrl';
-  font: 100 14px/1.5 'MuseoSansCyrl';
 }
 
 @media (max-width: 768px) {
@@ -54,7 +53,11 @@ body {
   margin: 0;
   padding: 0;
   color: #363636;
-  background: #fff;
+  background-image: url("../images/ayu-dag_1366.jpg");
+  background-position: center top;
+  background-size: cover;
+  opacity: .5;
+  z-index: 0;
 }
 
 img {
