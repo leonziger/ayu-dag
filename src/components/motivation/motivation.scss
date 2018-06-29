@@ -1,47 +1,116 @@
 .motivation{
-  padding-top: 90px;
   padding-left: 52px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 0 auto;
-  color: $lightgray;
+  padding-top: 90px;
 
-  &__title{
+  &__intro{
     display: flex;
-    font-weight: 700;
-    font-size: 48px;
-    letter-spacing: 1px;
-    line-height: 58px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    color: $lightgray;
+
+    &-title{
+      display: flex;
+      font-weight: 700;
+      font-size: 48px;
+      letter-spacing: 1px;
+      line-height: 58px;
+    }
+
+    &-slogan{
+      display: flex;
+      padding-top: 16px;
+      font-size: 21px;
+      font-weight: 100;
+      padding-bottom: 60px;
+    }
   }
 
-  &__slogan{
-    display: flex;
-    padding-top: 16px;
-    font-size: 21px;
-    font-weight: 100;
-    padding-bottom: 45px;
-  }
+
 
   &__download{
     display: flex;
-
     color: $lightgray;
     font-weight: 100;
     font-size: 16px;
 
+    &-icon{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 46px;
+      height: 46px;
+      border: 1px solid $red;
+      margin-right: 20px;
+
+        &:after{
+          content: '';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 26px;
+          height: 26px;
+          background: $red;
+        }
+
+      &_price{
+        &:after{
+          content:url('../images/icon_download_price.png');
+        }
+      }
+
+      &_present{
+        &:after{
+          content:url('../images/icon_download_present.png');
+        }
+      }
+    }
+
     &-link{
-      padding-bottom: 5px;
       text-decoration: none;
       border-bottom: 1px dotted transparent;
       transition: 0.2s;
+      letter-spacing: 0.32px;
+
+      span{
+        padding-bottom: 3px;
+        border-bottom: 1px dotted $lightgray;
+      }
+
+      &:hover{
+        span{
+          border-bottom: 0;
+        }
+
+        .motivation__download-icon{
+          border-color: $white;
+
+          &:after{
+            background-color: $white;
+          }
+        }
+      }
+
     }
 
     &-item{
       display: block;
-      padding-left: 70px;
-      padding-right: 65px;
+      padding-left: 5px;
+      padding-right: 54px;
     }
+  }
+
+  &__button{
+    display: flex;
+    margin:70px 0 85px;
+    width: 370px;
+    height: 70px;
+    box-shadow: 0 13px 34px rgba(236, 58, 72, 0.5);
+    border-radius: $bradius_formfield;
+    background-color: $red;
+    border: 1px solid $red;
   }
 }
