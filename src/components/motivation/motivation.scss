@@ -1,0 +1,47 @@
+.motivation{
+  padding-top: 90px;
+  padding-left: 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  color: $lightgray;
+
+  &__title{
+    display: flex;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 58px;
+  }
+
+  &__slogan{
+    display: flex;
+    padding-top: 16px;
+    font-size: 21px;
+    font-weight: 100;
+    padding-bottom: 45px;
+  }
+
+  &__download{
+    display: flex;
+
+    color: $lightgray;
+    font-weight: 100;
+    font-size: 16px;
+
+    &-link{
+      padding-bottom: 5px;
+      text-decoration: none;
+      border-bottom: 1px dotted transparent;
+      transition: 0.2s;
+    }
+
+    &-item{
+      display: block;
+      padding-left: 70px;
+      padding-right: 65px;
+    }
+  }
+}
