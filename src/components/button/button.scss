@@ -1,14 +1,15 @@
-.button{
+.button {
+  display: inline-flex;
   min-height: 60px;
+  padding: 21px 47px;
   border-radius: 30px;
   border: 1px solid $white;
   background: none;
   outline: none;
-  padding: 21px 47px;
   cursor: pointer;
   transition: 0.2s;
 
-  &:hover{
+  &:hover {
     background: $red;
   }
 }

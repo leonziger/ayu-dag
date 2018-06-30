@@ -1,8 +1,7 @@
-.motivation{
-  padding-left: 52px;
+.motivation {
   padding-top: 90px;
 
-  &__intro{
+  &__intro {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -10,7 +9,7 @@
     margin: 0 auto;
     color: $lightgray;
 
-    &-title{
+    &-title {
       display: flex;
       font-weight: 700;
       font-size: 48px;
@@ -18,7 +17,7 @@
       line-height: 58px;
     }
 
-    &-slogan{
+    &-slogan {
       display: flex;
       padding-top: 16px;
       font-size: 21px;
@@ -27,15 +26,13 @@
     }
   }
 
-
-
-  &__download{
+  &__download {
     display: flex;
     color: $lightgray;
     font-weight: 100;
     font-size: 16px;
 
-    &-icon{
+    &-icon {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -45,7 +42,7 @@
       border: 1px solid $red;
       margin-right: 20px;
 
-        &:after{
+        &:after {
           content: '';
           display: flex;
           align-items: center;
@@ -56,32 +53,32 @@
           background: $red;
         }
 
-      &_price{
-        &:after{
-          content:url('../images/icon_download_price.png');
+      &_price {
+        &:after {
+          content: url('../images/icon_download_price.png');
         }
       }
 
-      &_present{
-        &:after{
-          content:url('../images/icon_download_present.png');
+      &_present {
+        &:after {
+          content: url('../images/icon_download_present.png');
         }
       }
     }
 
-    &-link{
+    &-link {
       text-decoration: none;
       border-bottom: 1px dotted transparent;
       transition: 0.2s;
       letter-spacing: 0.32px;
 
-      span{
+      span {
         padding-bottom: 3px;
         border-bottom: 1px dotted $lightgray;
       }
 
-      &:hover{
-        span{
+      &:hover {
+        span {
           border-bottom: 0;
         }
 
@@ -103,9 +100,9 @@
     }
   }
 
-  &__button{
+  &__button {
     display: flex;
-    margin:70px 0 85px;
+    margin: 70px 0 85px;
     width: 370px;
     height: 70px;
     box-shadow: 0 13px 34px rgba(236, 58, 72, 0.5);
