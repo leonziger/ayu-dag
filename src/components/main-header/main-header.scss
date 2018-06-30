@@ -1,29 +1,15 @@
 .main-header{
-  //display: flex;
-  //justify-content: space-between;
-  //
-  //max-width: 1200px;
-  //padding-left: 15px;
-  //padding-right: 15px;
-  //margin: 0 auto;
   color: $white;
 
   &__logo {
     display: flex;
     align-items: center;
-
-    &-wrapper {
-      flex-shrink: 0;
-      margin-right: 50px;
-      padding: 22px 23px;
-      background: $white;
-    }
   }
 
   &__title {
     font-weight: 400;
     font-size: 14px;
-    max-width: 254px;
+    max-width: 284px;
     line-height: 16px;
   }
 
@@ -31,7 +17,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    //margin-top: 33px;
+    margin-top: 35px;
+    font-size: 14px;
+
+    @media (max-width: 992px){
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
 
     &-phone, &-button{
       letter-spacing: 1.4px;
@@ -42,6 +35,10 @@
       border-bottom: 1px dotted transparent;
       transition: 0.2s;
 
+      @media (max-width: 992px){
+        margin-bottom: 11px;
+      }
+
       &:hover{
         border-color: $white;
       }
@@ -50,6 +47,11 @@
     &-button{
       color: $white;
       margin-left: 27px;
+
+      @media (max-width: 992px){
+        padding: 22px;
+        margin-left: 0;
+      }
     }
   }
 }

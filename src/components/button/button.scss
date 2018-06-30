@@ -1,5 +1,7 @@
 .button {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 60px;
   padding: 21px 47px;
   border-radius: 30px;
@@ -11,5 +13,37 @@
 
   &:hover {
     background: $red;
+  }
+
+  &__icon{
+    fill: #fff;
+    font-size: 30px;
+    margin-left: 29px;
+  }
+
+  &_red{
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 47px;
+    min-height: 70px;
+    box-shadow: 0 13px 34px rgba(236, 58, 72, 0.5);
+    border-radius: $bradius_formfield;
+    background-color: $red;
+    border: 1px solid $red;
+    color: $lightgray;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+
+    &:hover{
+      box-shadow: 0 13px 34px rgba($lightgray, 0.5);
+      background-color: $lightgray;
+      border: 1px solid $lightgray;
+      color: $red;
+
+      .button__icon{
+        fill: $red;
+      }
+    }
   }
 }
