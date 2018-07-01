@@ -19,6 +19,10 @@
     fill: #fff;
     font-size: 30px;
     margin-left: 29px;
+
+    @media(max-width: 420px){
+      margin-left: 21px;
+    }
   }
 
   &_red{
@@ -34,6 +38,12 @@
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.32px;
+
+    @media(max-width: 420px){
+      padding-right: 22px;
+      padding-left: 30px;
+      font-weight: 100;
+    }
 
     &:hover{
       box-shadow: 0 13px 34px rgba($lightgray, 0.5);

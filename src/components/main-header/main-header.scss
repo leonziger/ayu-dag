@@ -4,13 +4,30 @@
   &__logo {
     display: flex;
     align-items: center;
-  }
 
-  &__title {
-    font-weight: 400;
-    font-size: 14px;
-    max-width: 284px;
-    line-height: 16px;
+    @media (max-width: 768px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-icon{
+      @media (max-width: 992px){
+        height: 105px;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 14px;
+      max-width: 285px;
+      line-height: 1.2;
+
+      @media (max-width: 768px){
+        margin-left: 0;
+      }
+    }
   }
 
   &__contacts {
