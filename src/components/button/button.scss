@@ -45,6 +45,10 @@
       font-weight: 100;
     }
 
+    @media(max-width: 338px){
+      font-size: 14px;
+    }
+
     &:hover{
       box-shadow: 0 13px 34px rgba($lightgray, 0.5);
       background-color: $lightgray;

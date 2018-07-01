@@ -28,6 +28,10 @@
         font-size: 30px;
         letter-spacing: 0.6px;
       }
+
+      @media (max-width: 338px) {
+        font-size: 28px;
+      }
     }
 
     &-slogan {
