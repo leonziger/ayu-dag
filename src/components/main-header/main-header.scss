@@ -10,9 +10,16 @@
       align-items: flex-start;
     }
 
+    &-link{
+    }
+
     &-icon{
-      @media (max-width: 992px){
-        height: 105px;
+      @media (max-width: 768px){
+        max-width: 115px;
+      }
+
+      @media (max-width: 630px){
+        max-width: 105px;
       }
     }
 
@@ -24,8 +31,26 @@
       max-width: 285px;
       line-height: 1.2;
 
+      @media (max-width: 992px){
+        flex-grow: 2;
+      }
+
       @media (max-width: 768px){
         margin-left: 0;
+      }
+
+      &_desktop{
+        @media (max-width: 630px){
+          display: none;
+        }
+      }
+
+      &_mobile{
+        margin-top: 11px;
+        max-width: 270px;
+        @media (min-width: 630px){
+          display: none;
+        }
       }
     }
   }
@@ -40,7 +65,13 @@
     @media (max-width: 992px){
       flex-direction: column;
       align-items: flex-start;
+      justify-content: flex-start;
       margin-top: 20px;
+      flex-grow: 2;
+    }
+
+    @media (max-width: 630px){
+      padding-left: 10px;
     }
 
     &-phone, &-button{
@@ -49,11 +80,12 @@
 
     &-phone{
       text-decoration: none;
+      line-height: 1;
       border-bottom: 1px dotted transparent;
       transition: 0.2s;
 
       @media (max-width: 992px){
-        margin-bottom: 11px;
+        margin-bottom: 10px;
       }
 
       &:hover{
@@ -66,8 +98,12 @@
       margin-left: 27px;
 
       @media (max-width: 992px){
-        padding: 22px;
+        padding: 12px 22px;
         margin-left: 0;
+      }
+
+      @media(max-width: 630px){
+        min-height: 54px;
       }
     }
   }
