@@ -1,17 +1,24 @@
 .callback{
+  display: block;
 
   &__form{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 23px;
   }
 
   &__label{
     display: block;
-    color: #3b3b3b;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 10px;
+  }
+
+  &__input{
+    outline: 0;
+    border: 0;
+    margin-bottom: 25px;
+    height: $height_formfields;
+    width: $width_formfields;
+    border-radius: $bradius_formfield;
   }
 
   &__phone{
@@ -25,6 +32,10 @@
 
   &__submit{
     align-self: center;
-    min-width: 210px;
+    border: 0;
+    margin-bottom: 25px;
+    height: $height_formfields;
+    width: $width_formfields;
+    border-radius: $bradius_formfield;
   }
 }

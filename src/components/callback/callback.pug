@@ -4,8 +4,8 @@ script(type='text/html', data-modal='callback')
       h2.modal__title Укажите ваш актуальный телефон
       p.modal__decription и мы свяжемся с вами в течении 15 минут
       form.callback__form
-        label.callback__label(for='callback-name') Введите ваше имя
-        input#callback-name.callback__name
-        label.callback__label(for='callback-phone') Введите ваш телефон
-        input#callback-phone.callback__phone
-        button.button.callback__submit Перезвоните мне
+        label.callback__label(for='callback-name')
+        input#callback-name.callback__input(placeholder='Введите ваше имя')
+        label.callback__label(for='callback-phone')
+        input#callback-phone.callback__input(placeholder='Введите ваш телефон')
+        button.button.callback__submit Оставить заявку
