@@ -2,12 +2,16 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  width: 586px;
+  height: 656px;
 
   &__title {
-    color: #3b3b3b;
-    font-size: 24px;
+    color: $black;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 22px;
+    text-align: center;
+    line-height: 1.2;
 
     @media(max-width: 870px){
       font-size: 20px;
