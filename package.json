@@ -25,11 +25,13 @@
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-bro": "^1.0.3",
+    "gulp-csslint": "^1.0.1",
     "gulp-csso": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-postcss": "^6.2.0",
     "gulp-pug": "^3.1.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-stylus": "^2.6.0",
     "gulp-svg-symbols": "^3.1.0",
@@ -43,7 +45,6 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
-    "gulp-sass": "^4.0.1",
     "jquery": "^3.3.1"
   }
 }

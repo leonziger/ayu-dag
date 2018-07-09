@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const csslint = require('gulp-csslint');
 const buffer = require('vinyl-buffer');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
@@ -35,6 +36,8 @@ gulp.task('styles', function () {
   return gulp.src('./src/app.scss')
     .pipe(gulpIf(isDevelopment, sourcemaps.init()))
     .pipe(sass().on('error', sass.logError))
+    // .pipe(csslint())
+    // .pipe(csslint.formatter())
     .pipe(gulpIf(!isDevelopment, postcss([
       autoprefixer({
         browsers: ['> 5%', 'ff > 14']
