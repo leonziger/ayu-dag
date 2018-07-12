@@ -43,19 +43,6 @@
     &_lg {
       max-width: 757px;
     }
-
-    &_noGutters {
-      padding: 0;
-
-      &_vertical {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-      &_horizontal {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
   }
 
   &__close {

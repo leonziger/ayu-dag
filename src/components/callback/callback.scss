@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 23px;
+    margin-top: 20px;
   }
 
   &__label{
@@ -15,10 +15,12 @@
   &__input{
     outline: 0;
     border: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     height: $height_formfields;
     width: $width_formfields;
     border-radius: $bradius_formfield;
+    padding-left: 50px;
+    font-size: 16px;
   }
 
   &__phone{
@@ -33,9 +35,14 @@
   &__submit{
     align-self: center;
     border: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     height: $height_formfields;
     width: $width_formfields;
     border-radius: $bradius_formfield;
+    font-weight: 400;
+
+    &:hover{
+      border-color: $red;
+    }
   }
 }
