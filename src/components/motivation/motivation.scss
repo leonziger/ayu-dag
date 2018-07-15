@@ -99,19 +99,20 @@
       }
     }
 
+    &-text {
+      display: inline-flex;
+      padding-bottom: 3px;
+      border-bottom: 1px dotted $lightgray;
+    }
+
     &-link {
       text-decoration: none;
       border-bottom: 1px dotted transparent;
       transition: 0.2s;
       letter-spacing: 0.32px;
 
-      span {
-        padding-bottom: 3px;
-        border-bottom: 1px dotted $lightgray;
-      }
-
       &:hover {
-        span {
+        .motivation__download-text {
           border-bottom: 0;
         }
 
