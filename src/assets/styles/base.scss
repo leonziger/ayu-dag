@@ -16,6 +16,10 @@
   font-size: 16px;
   color: #23292e;
   letter-spacing: 0.32px;
+
+  @media(max-width: 375px){
+    font-size: 14px;
+  }
 }
 
 * {

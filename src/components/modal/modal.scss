@@ -18,6 +18,20 @@
     text-align: center;
     line-height: 1.2;
     letter-spacing: 0.96px;
+
+    @media(max-width: 520px){
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    @media(max-width: 400px){
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    @media(max-width: 375px){
+      font-size: 24px;
+    }
   }
 
   &__decription {
@@ -27,6 +41,18 @@
     letter-spacing: 0.4px;
     padding: 3px 52px;
     text-align: center;
+
+    @media(max-width: 520px){
+      font-size: 18px;
+    }
+
+    @media(max-width: 400px){
+      padding: 3px 20px;
+    }
+
+    @media(max-width: 375px){
+      font-size: 16px;
+    }
   }
 
   &__content {
@@ -36,12 +62,8 @@
     background-color: $gray;
     padding: 55px;
 
-    @media(max-width: 420px) {
-      padding-bottom: 29px;
-    }
-
-    &_lg {
-      max-width: 757px;
+    @media(max-width: 520px) {
+      padding: 40px 20px 20px;
     }
   }
 
@@ -62,6 +84,20 @@
     &:hover{
       color:$red;
       background-color: $gray;
+    }
+
+    @media (max-width: 700px){
+      right: 0;
+      background-color: transparent;
+      color:$red;
+
+      &:hover{
+        color: $black;
+      }
+    }
+
+    @media (max-width: 520px){
+      padding: 0 20px;
     }
   }
 }

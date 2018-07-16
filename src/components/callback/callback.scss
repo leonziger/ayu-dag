@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   &__label{
@@ -16,11 +16,19 @@
     outline: 0;
     border: 0;
     margin-bottom: 28px;
-    height: $height_formfields;
-    width: $width_formfields;
+    max-height: $height_formfields;
+    max-width: $width_formfields;
     border-radius: $bradius_formfield;
-    padding-left: 50px;
+    padding: 28px 50px;
     font-size: 16px;
+
+    @media(max-width: 520px){
+      align-self: center;
+    }
+
+    @media(max-width: 375px){
+      padding: 20px 40px;
+    }
   }
 
   &__phone{
@@ -33,16 +41,20 @@
   }
 
   &__submit{
-    align-self: center;
     border: 0;
-    margin-bottom: 22px;
-    height: $height_formfields;
-    width: $width_formfields;
+    margin-bottom: 20px;
+    max-height: $height_formfields;
+    max-width: $width_formfields;
     border-radius: $bradius_formfield;
+    padding: 28px 50px;
     font-weight: 400;
 
     &:hover{
       border-color: $red;
+    }
+
+    @media(max-width: 520px){
+      align-self: center;
     }
   }
 }

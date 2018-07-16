@@ -6,6 +6,9 @@ script(type='text/html', data-modal='callback')
       form.callback__form
         label.callback__label(for='callback-name')
         input#callback-name.callback__input(placeholder='Введите ваше имя' autocomplete='off')
+        +icon({ icon: 'key', className: 'button__icon' })
         label.callback__label(for='callback-phone')
         input#callback-phone.callback__input(placeholder='Введите ваш телефон' autocomplete='off')
+        +icon({ icon: 'key', className: 'button__icon' })
         button.button.button_red.callback__submit Оставить заявку
+        +icon({ icon: 'key', className: 'button__icon' })
