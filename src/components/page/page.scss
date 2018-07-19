@@ -3,4 +3,5 @@
   background: linear-gradient(rgba($black, 0.9), transparent),
     url("../images/bg_main.jpg") center / cover;
   z-index: 2;
+  overflow-x: hidden;
 }
