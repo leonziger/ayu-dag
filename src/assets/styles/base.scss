@@ -91,10 +91,3 @@ textarea {
 address {
   font-style: normal;
 }
-
-.margin-zero{
-  @media (max-width: 375px){
-    margin-left: 0!important;
-    margin-right: 0!important;
-  }
-}
