@@ -56,14 +56,12 @@
     }
 
     &:hover{
-      box-shadow: 0 13px 34px rgba($lightgray, 0.5);
-      background-color: $lightgray;
-      border: 1px solid $lightgray;
-      color: $red;
-
-      .button__icon{
-        fill: $red;
-      }
+      background: darken($red, 10%);
+      box-shadow: 0 13px 34px darken(rgba(236, 58, 72, 0.5), 10%);
     }
+  }
+
+  &_block {
+    width: 100%;
   }
 }

@@ -1,14 +1,23 @@
+include ../form/form-group
+
+
 script(type='text/html', data-modal='callback')
   #modal-callback.modal
     .modal__content.callback
       h2.modal__title Укажите ваш актуальный телефон
-      p.modal__decription и мы свяжемся с вами в течении 15 минут
+      p.modal__decription и мы свяжемся с вами #[br] в течении 15 минут
       form.callback__form
-        label.callback__label(for='callback-name')
-        input#callback-name.callback__input(placeholder='Введите ваше имя' autocomplete='off')
-        +icon({ icon: 'key', className: 'button__icon' })
-        label.callback__label(for='callback-phone')
-        input#callback-phone.callback__input(placeholder='Введите ваш телефон' autocomplete='off')
-        +icon({ icon: 'key', className: 'button__icon' })
-        button.button.button_red.callback__submit Оставить заявку
-        +icon({ icon: 'key', className: 'button__icon' })
+        +form-group({
+          id: 'name',
+          name: 'name',
+          placeholder: 'Введите ваше имя',
+          icon: 'user'
+        })
+        +form-group({
+          id: 'phone',
+          name: 'phone',
+          placeholder: 'Введите ваш телефон',
+          icon: 'phone'
+        })
+        button.button.button_red.button_block.callback__submit Оставить заявку
+          +icon({ icon: 'mobile', className: 'button__icon' })

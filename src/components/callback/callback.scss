@@ -1,60 +1,28 @@
 .callback{
-  display: block;
 
-  &__form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 22px;
-  }
+  //&__form{
+  //  display: flex;
+  //  justify-content: center;
+  //  flex-direction: column;
+  //}
 
-  &__label{
-    display: block;
-  }
 
-  &__input{
-    outline: 0;
-    border: 0;
-    margin-bottom: 28px;
-    max-height: $height_formfields;
-    max-width: $width_formfields;
-    border-radius: $bradius_formfield;
-    padding: 28px 50px;
-    font-size: 16px;
 
-    @media(max-width: 520px){
-      align-self: center;
-    }
-
-    @media(max-width: 375px){
-      padding: 20px 40px;
-    }
-  }
-
-  &__phone{
-    width: 100%;
-    height: 42px;
-    padding: 14px;
-    border: 1px solid #d2d2d2;
-    background-color: #ffffff;
-    margin-bottom: 30px;
-  }
-
-  &__submit{
-    border: 0;
-    margin-bottom: 20px;
-    max-height: $height_formfields;
-    max-width: $width_formfields;
-    border-radius: $bradius_formfield;
-    padding: 28px 50px;
-    font-weight: 400;
-
-    &:hover{
-      border-color: $red;
-    }
-
-    @media(max-width: 520px){
-      align-self: center;
-    }
-  }
+  //&__submit{
+  //  border: 0;
+  //  margin-bottom: 20px;
+  //  max-height: $height_formfields;
+  //  max-width: $width_formfields;
+  //  border-radius: $bradius_formfield;
+  //  padding: 28px 50px;
+  //  font-weight: 400;
+  //
+  //  &:hover{
+  //    border-color: $red;
+  //  }
+  //
+  //  @media(max-width: 520px){
+  //    align-self: center;
+  //  }
+  //}
 }

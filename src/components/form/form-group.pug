@@ -1,0 +1,13 @@
+include ../icon/icon
+
+
+mixin form-group(data)
+  .form-group
+    input.form-group__input(
+      id=data.id
+      name=data.name
+      placeholder=data.placeholder
+      autocomplete='off'
+    )
+    label.form-group__addon(for=data.id)
+      +icon({ icon: data.icon })
