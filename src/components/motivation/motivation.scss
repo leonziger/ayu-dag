@@ -141,5 +141,11 @@
 
   &__button {
     margin: 76px 0 82px;
+
+    &:hover{
+      box-shadow: 0 8px 20px rgba(236, 58, 72, 0.9);
+      background-color: $another_red;
+      background-color: $red;
+    }
   }
 }

@@ -56,8 +56,10 @@
     }
 
     &:hover{
-      background: darken($red, 10%);
-      box-shadow: 0 13px 34px darken(rgba(236, 58, 72, 0.5), 10%);
+      //background: darken($red, 10%);
+      //box-shadow: 0 13px 34px darken(rgba(236, 58, 72, 0.5), 10%);
+      box-shadow: 0 7px 17px rgba(236, 58, 72, 0.5);
+
     }
   }
 
