@@ -2,10 +2,10 @@ import $ from 'jquery';
 import vex from 'vex-js';
 
 
-$('.main-header__contacts-button').click(function (e) {
+$('.motivation__download-text').click(function (e) {
   e.preventDefault();
 
-  const modal = $(`[data-modal=callback]`);
+  const modal = $(`[data-modal=present]`);
 
   if (!modal.length) {
     return console.error('Modal is not exist!');

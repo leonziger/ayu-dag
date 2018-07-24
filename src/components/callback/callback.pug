@@ -6,7 +6,7 @@ script(type='text/html', data-modal='callback')
     .modal__content
       h2.modal__title Укажите ваш актуальный телефон
       p.modal__decription и мы свяжемся с вами #[br] в течении 15 минут
-      form.callback__form
+      form
         +form-group({
           id: 'name',
           name: 'name',
@@ -19,5 +19,5 @@ script(type='text/html', data-modal='callback')
           placeholder: 'Введите ваш телефон',
           icon: 'phone'
         })
-        button.button.button_red.button_block.callback__submit Оставить заявку
+        button.button.button_red.button_block Оставить заявку
           +icon({ icon: 'mobile', className: 'button__icon' })

@@ -1,0 +1,31 @@
+include ../form/form-group
+
+
+script(type='text/html', data-modal='present')
+  #modal-present.modal
+    .modal__visual
+      img.modal__image(src='../images/mockup_present.png' alt='')
+    .modal__content.present__content
+      h2.modal__title.present__title Оставьте заявку
+      p.modal__decription.present__decription чтобы получить презентацию
+      form
+        +form-group({
+          id: 'name',
+          name: 'name',
+          placeholder: 'Введите ваше имя',
+          icon: 'user'
+        })
+        +form-group({
+          id: 'phone',
+          name: 'phone',
+          placeholder: 'Введите ваш телефон',
+          icon: 'phone'
+        })
+        +form-group({
+          id: 'email',
+          name: 'email',
+          placeholder: 'Введите ваш email',
+          icon: 'email'
+        })
+        button.button.button_red.button_block.callback__submit Получить презентацию
+          +icon({ icon: 'mobile', className: 'button__icon' })

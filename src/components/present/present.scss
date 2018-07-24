@@ -1,0 +1,25 @@
+.form-group{
+  margin-bottom: 18px;
+}
+
+.present {
+
+  &__content{
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 23px;
+  }
+
+  &__decription {
+    text-align: left;
+    margin-bottom: 29px;
+  }
+
+  &__input{
+    margin-bottom: 18px;
+  }
+}
