@@ -1,4 +1,4 @@
-@import '../../../../../node_modules/vex-js/sass/vex.sass';
+@import '../../../../node_modules/vex-js/sass/vex.sass';
 
 
 .vex{
@@ -12,6 +12,9 @@
     margin-top: auto;
     margin-bottom: auto;
     background: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   &-overlay{

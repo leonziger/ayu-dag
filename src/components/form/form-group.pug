@@ -2,7 +2,7 @@ include ../icon/icon
 
 
 mixin form-group(data)
-  .form-group
+  .form-group(class=data.className)
     input.form-group__input(
       id=data.id
       name=data.name

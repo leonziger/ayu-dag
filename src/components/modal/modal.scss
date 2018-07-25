@@ -9,30 +9,30 @@
 .modal {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
   z-index: 9999;
+  max-width: 488px;
 
-  &__visual{
-    display: none;
+  &_image {
+    max-width: 976px;
+    width: 100%;
   }
 
-  &__image {
-
+  &__picture {
+    position: absolute;
+    left: -133px;
+    top: -29px;
+    max-width: none;
+    z-index: 1;
   }
 
   &__title {
     color: $black;
     font-size: 48px;
     font-weight: 700;
-    text-align: center;
     line-height: 1.2;
     letter-spacing: 0.96px;
     margin-bottom: 9px;
-
-    //&_present{
-    //  text-align: left;
-    //  margin-bottom: 23px;
-    //}
 
     @media(max-width: 520px){
       font-size: 40px;
@@ -54,14 +54,8 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 25px;
-
-    //&_present{
-    //  text-align: left;
-    //  margin-bottom: 29px;
-    //}
 
     @media(max-width: 520px){
       font-size: 18px;
@@ -79,14 +73,23 @@
   &__content {
     width: 100%;
     position: relative;
-    max-width: 488px;
     background-color: $gray;
     padding: 55px 55px 75px;
+    text-align: center;
 
-    //&_present {
-    //  padding-left: 62px;
-    //  padding-right: 62px;
-    //}
+    &_secondary {
+      padding-left: 62px;
+      padding-right: 62px;
+      text-align: left;
+
+      .modal__title {
+        margin-bottom: 23px;
+      }
+
+      .modal__decription {
+        margin-bottom: 29px;
+      }
+    }
 
     @media(max-width: 460px) {
       padding: 40px 20px 20px;
@@ -97,9 +100,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: -102px;
+    //position: absolute;
+    //top: 0;
+    //right: -102px;
     z-index: 10;
     background-color: $red;
     max-width: 102px;
