@@ -6,8 +6,10 @@
   justify-content: center;
   align-items: center;
   padding: 50px 15px 20px;
+  overflow: auto;
 
   &-content{
+    margin-left: $close_height_width;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
@@ -18,6 +20,7 @@
 
     @media (max-width: 1300px) {
       width: auto;
+      margin-left: 0;
     }
   }
 
