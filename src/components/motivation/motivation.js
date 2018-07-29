@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import vex from 'vex-js';
+import phone from '../form/phone';
 
 
 $('#download_present').click(function (e) {
@@ -14,6 +15,9 @@ $('#download_present').click(function (e) {
   vex.open({
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
+    afterOpen: function () {
+      phone.mask();
+    }
   });
 });
 
@@ -29,6 +33,9 @@ $('#download_price').click(function (e) {
   vex.open({
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
+    afterOpen: function () {
+      phone.mask();
+    }
   });
 });
 

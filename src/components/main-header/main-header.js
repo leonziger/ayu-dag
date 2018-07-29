@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import vex from 'vex-js';
+import phone from '../form/phone';
 
 
 $('.main-header__contacts-button').click(function (e) {
@@ -14,8 +15,8 @@ $('.main-header__contacts-button').click(function (e) {
   vex.open({
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
-    // afterOpen: function () {
-    //   callback.mask();
-    // }
+    afterOpen: function () {
+      phone.mask();
+    }
   });
 });
