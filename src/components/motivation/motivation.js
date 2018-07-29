@@ -31,3 +31,19 @@ $('#download_price').click(function (e) {
     closeClassName: 'modal__close',
   });
 });
+
+
+$('.motivation__button').click(function (e) {
+  e.preventDefault();
+
+  const modal = $(`[data-modal=thanks]`);
+
+  if (!modal.length) {
+    return console.error('Modal is not exist!');
+  }
+
+  vex.open({
+    unsafeContent: modal.html(),
+    closeClassName: 'modal__close',
+  });
+});

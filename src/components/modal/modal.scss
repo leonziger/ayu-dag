@@ -68,6 +68,17 @@
     }
   }
 
+  &__text{
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    color: $black;
+    line-height: 1.25;
+    padding-top: 22px;
+  }
+
+  &__image{
+  }
+
   &__content {
     width: 100%;
     position: relative;
@@ -99,6 +110,10 @@
           margin-bottom: 25px;
         }
       }
+    }
+
+    &_tertiary{
+      padding: 55px 126px 70px;
     }
 
     &_hide{
