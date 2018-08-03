@@ -9,13 +9,19 @@
 .modal {
   display: flex;
   justify-content: space-between;
-  //align-items: center;
   z-index: 9999;
   max-width: 488px;
 
+  @media (max-width: 1300px) {
+  }
+
   &_image {
-    max-width: 976px;
-    width: 100%;
+
+    @media (min-width: 1300px) {
+      width: 976px;
+      max-width: 100%;
+    }
+
   }
 
   &__picture {

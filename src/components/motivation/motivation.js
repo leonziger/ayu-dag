@@ -16,7 +16,9 @@ $('#download_present').click(function (e) {
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
     afterOpen: function () {
-      phone.mask();
+      $('[type=tel]').focus(function(){
+        phone.mask(this);
+      })
     }
   });
 });
@@ -34,7 +36,9 @@ $('#download_price').click(function (e) {
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
     afterOpen: function () {
-      phone.mask();
+      $('[type=tel]').focus(function(){
+        phone.mask(this);
+      })
     }
   });
 });

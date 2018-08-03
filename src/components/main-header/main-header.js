@@ -16,7 +16,9 @@ $('.main-header__contacts-button').click(function (e) {
     unsafeContent: modal.html(),
     closeClassName: 'modal__close',
     afterOpen: function () {
-      phone.mask();
+      $('[type=tel]').focus(function(){
+        phone.mask(this);
+      })
     }
   });
 });
